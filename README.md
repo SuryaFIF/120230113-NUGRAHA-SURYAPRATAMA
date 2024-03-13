@@ -79,3 +79,34 @@ int main() {
 
     return 0;
 }
+
+Penjelasan Source Code
+
+Pendefinisian Konstanta dan Prototipe Fungsi:
+
+MAX_LENGTH dan MIN_LENGTH didefinisikan sebagai konstanta yang menentukan panjang maksimum dan minimum teks.
+Prototipe fungsi lessThanRequired, equalThanRequired, dan moreThanRequired dideklarasikan untuk memberikan pesan sesuai dengan panjang teks yang diinput.
+Fungsi lessThanRequired:
+
+Fungsi ini mengambil alamat dari panjang teks dan menampilkan pesan jika panjang teks kurang dari panjang minimum yang ditentukan.
+Panjang teks diupdate ke nilai minimum menggunakan pointer.
+Fungsi equalThanRequired:
+
+Fungsi ini hanya menampilkan pesan jika panjang teks sama dengan panjang minimum yang ditentukan.
+Fungsi moreThanRequired:
+
+Fungsi ini mengambil alamat dari panjang teks dan menampilkan pesan jika panjang teks lebih dari panjang minimum yang ditentukan.
+Panjang teks diupdate ke nilai minimum menggunakan pointer.
+Fungsi checkLengthRequirement:
+
+Fungsi ini menerima teks dan mengembalikan nilai berdasarkan panjang teks relatif terhadap panjang minimum yang ditentukan.
+Jika panjang teks kurang dari panjang minimum, fungsi mengembalikan 0.
+Jika panjang teks sama dengan panjang minimum, fungsi mengembalikan 1.
+Jika panjang teks lebih dari panjang minimum, fungsi mengembalikan 2.
+Fungsi main:
+
+Dalam fungsi main, file "file.txt" dibuka dan teksnya dibaca menggunakan fgets.
+Nilai yang dikembalikan oleh checkLengthRequirement disimpan dalam variabel selectOption.
+Array options dari fungsi pointer dibuat, yang merujuk ke fungsi lessThanRequired, equalThanRequired, dan moreThanRequired.
+Fungsi pointer dipanggil berdasarkan nilai selectOption untuk menampilkan pesan dan memperbarui nilai panjang teks jika diperlukan.
+Terakhir, panjang teks yang diperbarui dicetak ke layar.
